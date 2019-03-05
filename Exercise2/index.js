@@ -1,20 +1,20 @@
-var camera, scene, renderer, controls;
+let camera, scene, renderer, controls;
 
-var objects = [];
+let objects = [];
 
-var raycaster;
+let raycaster;
 
-var moveForward = false;
-var moveBackward = false;
-var moveLeft = false;
-var moveRight = false;
-var canJump = false;
+let moveForward = false;
+let moveBackward = false;
+let moveLeft = false;
+let moveRight = false;
+let canJump = false;
 
-var prevTime = performance.now();
-var velocity = new THREE.Vector3();
-var direction = new THREE.Vector3();
-var vertex = new THREE.Vector3();
-var color = new THREE.Color();
+let prevTime = performance.now();
+let velocity = new THREE.Vector3();
+let direction = new THREE.Vector3();
+let vertex = new THREE.Vector3();
+let color = new THREE.Color();
 
 init();
 animate();
@@ -37,8 +37,8 @@ function init() {
 
     controls = new THREE.PointerLockControls(camera);
 
-    var blocker = document.getElementById('blocker');
-    var instructions = document.getElementById('instructions');
+    let blocker = document.getElementById('blocker');
+    let instructions = document.getElementById('instructions');
 
     instructions.addEventListener('click', function () {
         controls.lock();
@@ -60,14 +60,14 @@ function init() {
 
     // floor
 
-    var floorGeometry = new THREE.PlaneBufferGeometry(200, 200, 100, 10);
+    let floorGeometry = new THREE.PlaneBufferGeometry(200, 200, 100, 10);
     floorGeometry.rotateX(- Math.PI / 2);
 
     // vertex displacement
 
-    var position = floorGeometry.attributes.position;
+    let position = floorGeometry.attributes.position;
 
-    for (var i = 0, l = position.count; i < l; i++) {
+    for (let i = 0, l = position.count; i < l; i++) {
 
         vertex.fromBufferAttribute(position, i);
 
@@ -82,9 +82,9 @@ function init() {
     floorGeometry = floorGeometry.toNonIndexed(); // ensure each face has unique vertices
 
     position = floorGeometry.attributes.position;
-    var colors = [];
+    let colors = [];
 
-    for (var i = 0, l = position.count; i < l; i++) {
+    for (let i = 0, l = position.count; i < l; i++) {
 
         color.setHSL(Math.random() * 0.3 + 0.5, 0.75, Math.random() * 0.25 + 0.75);
         colors.push(color.r, color.g, color.b);
@@ -93,9 +93,9 @@ function init() {
 
     floorGeometry.addAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
 
-    var floorMaterial = new THREE.MeshBasicMaterial({ vertexColors: THREE.VertexColors });
+    let floorMaterial = new THREE.MeshBasicMaterial({ vertexColors: THREE.VertexColors });
 
-    var floor = new THREE.Mesh(floorGeometry, floorMaterial);
+    let floor = new THREE.Mesh(floorGeometry, floorMaterial);
     scene.add(floor);
 
     ;
@@ -131,12 +131,12 @@ function animate() {
         raycaster.ray.origin.copy(controls.getObject().position);
         raycaster.ray.origin.y -= 10;
 
-        var intersections = raycaster.intersectObjects(objects);
+        let intersections = raycaster.intersectObjects(objects);
 
-        var onObject = intersections.length > 0;
+        let onObject = intersections.length > 0;
 
-        var time = performance.now();
-        var delta = (time - prevTime) / 1000;
+        let time = performance.now();
+        let delta = (time - prevTime) / 1000;
 
         velocity.x -= velocity.x * 10.0 * delta;
         velocity.z -= velocity.z * 10.0 * delta;
@@ -179,10 +179,10 @@ function animate() {
 }
 
 
-var fontModel;
+let fontModel;
 function initModel() {
-    var font;
-    var loader = new THREE.FontLoader();
+    let font;
+    let loader = new THREE.FontLoader();
     loader.load("gentilis_regular.typeface.json", function (res) {
         font = new THREE.TextBufferGeometry("EXERCISE", {
             font: res,
@@ -191,8 +191,8 @@ function initModel() {
         });
         font.computeBoundingBox(); // 執行以後設定font的boundingBox屬性物件，如果不執行無法獲得。 
         //font.computeVertexNormals(); 
-        var map = new THREE.TextureLoader().load("examples/textures/UV_Grid_Sm.jpg");
-        var material = new THREE.MeshLambertMaterial({ map: map, side: THREE.DoubleSide });
+        let map = new THREE.TextureLoader().load("examples/textures/UV_Grid_Sm.jpg");
+        let material = new THREE.MeshLambertMaterial({ map: map, side: THREE.DoubleSide });
         fontModel = new THREE.Mesh(font, material);
         //設定位置 
         fontModel.position.x = - (font.boundingBox.max.x - font.boundingBox.min.x) / 2; //計算出整個模型的寬度的一半 

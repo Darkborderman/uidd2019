@@ -21,19 +21,19 @@ document.getElementById("right").addEventListener("click",()=>{
 function changeChip(chipNumber,duration){
     if(chipNumber==0){
         $("#chips").fadeOut(duration,()=>{
-            $("#chips").attr("src","/images/chips/cheddar.png");
+            $("#chips").attr("src","./images/chips/cheddar.png");
         });
         $("#chips").fadeIn(duration);
     }
     if(chipNumber==1){
         $("#chips").fadeOut(duration,()=>{
-            $("#chips").attr("src","/images/chips/flamingHot.png");
+            $("#chips").attr("src","./images/chips/flamingHot.png");
         });
         $("#chips").fadeIn(duration);
     }
     if(chipNumber==2){
         $("#chips").fadeOut(duration,()=>{
-            $("#chips").attr("src","/images/chips/onion.png");
+            $("#chips").attr("src","./images/chips/onion.png");
         });
         $("#chips").fadeIn(duration);
     }

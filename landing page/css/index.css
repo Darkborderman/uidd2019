@@ -1,0 +1,58 @@
+.background{
+    position: absolute;
+    padding:0px;
+    border:0px;
+    margin:0px;
+
+    width:1920px;
+    height:1080px;
+    
+    z-index:-100;
+    overflow: scroll;
+}
+.chips{
+    position: absolute;
+    padding:0px;
+    border:0px;
+    margin:0px;
+    
+    width:1908px;
+    height:1080px;
+
+    z-index:-99;
+    overflow:scroll;
+}
+
+.detail-container{
+    width:0px;
+    height:0px;
+}
+.left{
+    position: absolute;
+    padding-left:1000px;
+    padding-top:850px;
+    border:0px;
+    margin:0px;
+
+    z-index:-95;
+}
+.detail{
+    position: absolute;
+    padding:0px;
+    border:0px;
+    margin:0px;
+
+    padding-left:1070px;
+    padding-top:770px;
+    
+    z-index:-98;
+}
+.right{ 
+    position: absolute;
+    padding-left:1450px;
+    padding-top:850px;
+    border:0px;
+    margin:0px;
+
+    z-index:-95;
+}

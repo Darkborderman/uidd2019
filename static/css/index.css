@@ -1,0 +1,15 @@
+body{
+    background: black;
+}
+h1{
+    color:white;
+}
+#pixi-canvas{
+}
+canvas{
+    border:0px;
+    margin-top:2px; 
+    box-shadow:4px 4px 10px white;
+    width:50%;
+    height:700px;
+}

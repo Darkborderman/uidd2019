@@ -2,11 +2,10 @@ html{
     border:0px;
     margin:0px;
     padding:0px;
-    max-height:980px;
 }
 body{
     border:0px;
-    margin:12.36% 13.75% 24.30% 13.75% ;
+    margin:3% 13.75% 24.30% 13.75% ;
     padding:0px;
     background: black;
 }
@@ -14,7 +13,7 @@ h1{
     color:white;
 }
 #pixi-canvas{
-
+    margin-top:9%;
 }
 article{
     color:white;
@@ -28,6 +27,9 @@ canvas{
     height:412px;
 }
 .container{
+    border:0px;
+    padding:0px;
+    margin-top:9%;
     display:flex;
     flex-direction: row;
 }
@@ -92,4 +94,14 @@ canvas{
     top: 40%;
     color: white;
     letter-spacing: 2px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+span{
+    margin-top:20px;
+    color:white;
 }

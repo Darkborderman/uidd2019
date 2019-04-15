@@ -22,7 +22,6 @@ $(document).ready(() => {
             brief: 'Experience/ <br><br>2017 Industrial Design Winter Exhibtion coutor<br>2017 Summer Internship in Gecko Design<br><br>Contact/<br><br>abby123445@gmail.com<br>0911-314-875'
         },
         {
-
             photo: `url(https://i.imgur.com/Ph9NmfR.png)`,
             location: `../img/singleportait2.png`,
             width: 120,

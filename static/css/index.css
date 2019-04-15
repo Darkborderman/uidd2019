@@ -22,9 +22,9 @@ article{
 canvas{
     border: 0px 0px 2px 2px;
     margin:10px;
-    box-shadow:4px 4px 10px white;
-    width:800px;
-    height:480px;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.2);
+    width:768px;
+    height:412px;
 }
 .container{
     border:0px;

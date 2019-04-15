@@ -18,8 +18,8 @@ $(document).ready(() => {
             height: 440,
             x: 130,
             y: 220,
-            name: 'Tsai Han Ju/',
-            brief: 'Experience/ <br><br>2017 Industrial Design Winter Exhibtion coutor<br>2017 Summer Internship in Gecko Design<br><br>Contact/<br><br>abby123445@gmail.com<br>0911-314-875'
+            name: 'Tseng Da wei/',
+            brief: 'Experience/ <br><br>expert in JS frontend, backend<br><br>Contact/<br><br>reastw1234@gmail.com'
         },
         {
             photo: `url(https://i.imgur.com/Ph9NmfR.png)`,
@@ -28,8 +28,8 @@ $(document).ready(() => {
             height: 440,
             x: 289,
             y: 220,
-            name: '2',
-            brief: '2 profile'
+            name: 'Liu He Yi/',
+            brief: 'Experience/<br><br>C++ 剛踏出新手村<br>網頁設計 剛踏入新手村<br><br>Contact/<br><br>audrey.88630@gmail.com<br>0966056334',
         },
         {
             photo: `url(https://i.imgur.com/gNQotMz.png)`,
@@ -38,8 +38,9 @@ $(document).ready(() => {
             height: 440,
             x: 400,
             y: 220,
-            name: '3',
-            brief: '3 profile'
+            name: 'Chang Fu Han/',
+            brief: 'Experience/<br><br>2016 Summer Intership in Advantech<br><br>Contact/<br><br>zonac0217@gmail.com',
+          
         },
         {
             photo: `url(https://i.imgur.com/MrAJt5S.png)`,
@@ -49,8 +50,9 @@ $(document).ready(() => {
 
             x: 520,
             y: 220,
-            name: '4',
-            brief: '4 profile'
+            name: 'Tsai Han Ju',
+            brief: 'Experience/ <br><br>2017 Industrial Design Winter Exhibtion coutor<br>2017 Summer Internship in Gecko Design<br><br>Contact/<br><br>abby123445@gmail.com<br>0911-314-875'
+          
         },
         {
             photo: `url(https://i.imgur.com/mVNIjAy.png)`,
@@ -60,8 +62,9 @@ $(document).ready(() => {
 
             x: 680,
             y: 220,
-            name: '5',
-            brief: '5 profile'
+            name: 'Shiue Sheng Cian',
+            brief: 'Experience/<br> <br>2017 台灣國際造船暑期實習生<br>2018 上海交通大學暑期交換學生 <br><br>Contact/<br><br>t50504t@gmail.com<br>0970318055'
+          
         },
     ];
 

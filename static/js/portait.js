@@ -8,56 +8,59 @@ $(document).ready(() => {
     // Resize the renderer
     app.renderer.resize(parent.clientWidth, parent.clientHeight);
 
-    let isHovered=false;
+    let isHovered = false;
+    let hoverOn=-1;
     let members = [
-        {   photo:`url(https://i.imgur.com/nDvlkE1.png)`,
+        {
+            photo: `url(https://i.imgur.com/nDvlkE1.png)`,
             location: `../img/singleportait1.png`,
-            width:309,
-            height:550,
-            x: 170,
-            y: 300,
+            width: 252,
+            height: 440,
+            x: 130,
+            y: 220,
             name: 'Tsai Han Ju/',
             brief: 'Experience/ <br><br>2017 Industrial Design Winter Exhibtion coutor<br>2017 Summer Internship in Gecko Design<br><br>Contact/<br><br>abby123445@gmail.com<br>0911-314-875'
         },
         {
-            
-            photo:`url(https://i.imgur.com/Ph9NmfR.png)`,
+
+            photo: `url(https://i.imgur.com/Ph9NmfR.png)`,
             location: `../img/singleportait2.png`,
-            width:150,
-            height:550,
-            x: 365,
-            y: 300,
+            width: 120,
+            height: 440,
+            x: 289,
+            y: 220,
             name: '2',
             brief: '2 profile'
         },
         {
-            photo:`url(https://i.imgur.com/gNQotMz.png)`,
+            photo: `url(https://i.imgur.com/gNQotMz.png)`,
             location: `../img/singleportait3.png`,
-            width:166,
-            height:550,
-            x: 500,
-            y: 300,
+            width: 132,
+            height: 440,
+            x: 400,
+            y: 220,
             name: '3',
             brief: '3 profile'
         },
-        {   
-            photo:`url(https://i.imgur.com/MrAJt5S.png)`,
+        {
+            photo: `url(https://i.imgur.com/MrAJt5S.png)`,
             location: `../img/singleportait4.png`,
-            width:200,
-            height:550,
+            width: 160,
+            height: 440,
 
-            x: 645,
-            y: 300,
+            x: 520,
+            y: 220,
             name: '4',
             brief: '4 profile'
         },
-        {   photo:`url(https://i.imgur.com/mVNIjAy.png)`,
+        {
+            photo: `url(https://i.imgur.com/mVNIjAy.png)`,
             location: `../img/singleportait5.png`,
-            width:258,
-            height:550,
+            width: 208,
+            height: 440,
 
-            x: 845,
-            y: 300,
+            x: 680,
+            y: 220,
             name: '5',
             brief: '5 profile'
         },
@@ -67,25 +70,25 @@ $(document).ready(() => {
 
     let bunnies = [];
     let toggleCharacter = 0;
-    
-    let background= PIXI.Sprite.from(`../img/full-portait.png`);
+
+    let background = PIXI.Sprite.from(`../img/full-portait.png`);
     background.anchor.set(0.5);
-    background.width=988;
-    background.x=499;
-    background.height=550;
-    background.y=300;
+    background.width = 800;
+    background.x = 400;
+    background.height = 440;
+    background.y = 220;
     app.stage.addChild(background);
-    
-    
-    
+
+
+
     for (let i = 0; i <= 4; i++) {
 
         //initialize each character
         let member = PIXI.Sprite.from(members[i].location);
         member.anchor.set(0.5);
         //member.scale=0.5;
-        member.width=members[i].width;
-        member.height=members[i].height;
+        member.width = members[i].width;
+        member.height = members[i].height;
         member.x = members[i].x;
         member.y = members[i].y;
 
@@ -93,7 +96,8 @@ $(document).ready(() => {
         member.interactive = true;
         member.buttonMode = true;
         member.on('pointerdown', (object) => { showDetail(object, members, i); });
-
+        member.on(`mouseover`, () => { isHovered=true; hoverOn=i;});
+        member.on(`mouseout`,()=>{ isHovered=false; showPortait();})
         console.log(member);
         bunnies.push(member);
         app.stage.addChild(member);
@@ -102,9 +106,32 @@ $(document).ready(() => {
 
     // Listen for animate update
     app.ticker.add((delta) => {
-
-        
+        if(isHovered){
+            hidePortait();
+        }
+        else {
+            showPortait();
+        }
+        console.log(hoverOn);
     });
+    function hidePortait() {
+        if (background.alpha > 0.2) {
+            background.alpha -= 0.03;
+        }
+        for (let i = 0; i <= 4; i++) {
+            if(i==hoverOn) continue;
+            if (bunnies[i].alpha > 0.2)
+                bunnies[i].alpha -= 0.03;
+        }
+    }
+    function showPortait() {
+        if (background.alpha < 1) {
+            background.alpha += 0.03;
+        }
+        for (let i = 0; i <= 4; i++) {
+            bunnies[i].alpha += 0.03;
+        }
+    }
 
     function showDetail(object, members, index) {
         i = toggleCharacter;
@@ -133,7 +160,7 @@ $(document).ready(() => {
                 .animate({ top: "+=14%", opacity: 1 }, 1000);
         }
         $("div.name").html(members[index].name);
-        $("div.pic").css("background-image",members[index].photo);
+        $("div.pic").css("background-image", members[index].photo);
         $('div.brief').html(members[index].brief);
         toggleCharacter = 1;
     }
@@ -144,13 +171,13 @@ $(document).ready(() => {
 
 //disable scrolling to prevent our ugly code
 // Writing bad code let me feel guilty, should I blame?
-var keys = [32,33,34,35,36,37,38,39,40];
+var keys = [32, 33, 34, 35, 36, 37, 38, 39, 40];
 
 function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-      e.preventDefault();
-  e.returnValue = false;  
+    e = e || window.event;
+    if (e.preventDefault)
+        e.preventDefault();
+    e.returnValue = false;
 }
 
 function keydown(e) {
@@ -163,13 +190,13 @@ function keydown(e) {
 }
 
 function wheel(e) {
-  preventDefault(e);
+    preventDefault(e);
 }
 
 function disable_scroll() {
-  if (window.addEventListener) {
-      window.addEventListener('DOMMouseScroll', wheel, false);
-  }
-  window.onmousewheel = document.onmousewheel = wheel;
-  document.onkeydown = keydown;
+    if (window.addEventListener) {
+        window.addEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = wheel;
+    document.onkeydown = keydown;
 }

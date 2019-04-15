@@ -10,7 +10,7 @@ $(document).ready(() => {
 
     let isHovered=false;
     let members = [
-        {
+        {   photo:`url(https://i.imgur.com/nDvlkE1.png)`,
             location: `../img/singleportait1.png`,
             width:309,
             height:550,
@@ -20,6 +20,8 @@ $(document).ready(() => {
             brief: 'Experience/ <br><br>2017 Industrial Design Winter Exhibtion coutor<br>2017 Summer Internship in Gecko Design<br><br>Contact/<br><br>abby123445@gmail.com<br>0911-314-875'
         },
         {
+            
+            photo:`url(https://i.imgur.com/Ph9NmfR.png)`,
             location: `../img/singleportait2.png`,
             width:150,
             height:550,
@@ -29,6 +31,7 @@ $(document).ready(() => {
             brief: '2 profile'
         },
         {
+            photo:`url(https://i.imgur.com/gNQotMz.png)`,
             location: `../img/singleportait3.png`,
             width:166,
             height:550,
@@ -37,7 +40,8 @@ $(document).ready(() => {
             name: '3',
             brief: '3 profile'
         },
-        {
+        {   
+            photo:`url(https://i.imgur.com/MrAJt5S.png)`,
             location: `../img/singleportait4.png`,
             width:200,
             height:550,
@@ -47,7 +51,7 @@ $(document).ready(() => {
             name: '4',
             brief: '4 profile'
         },
-        {
+        {   photo:`url(https://i.imgur.com/mVNIjAy.png)`,
             location: `../img/singleportait5.png`,
             width:258,
             height:550,
@@ -129,7 +133,7 @@ $(document).ready(() => {
                 .animate({ top: "+=14%", opacity: 1 }, 1000);
         }
         $("div.name").html(members[index].name);
-        $("div.pic").css("background-image", "url(https://i.imgur.com/dnYu2CZ.png)");
+        $("div.pic").css("background-image",members[index].photo);
         $('div.brief').html(members[index].brief);
         toggleCharacter = 1;
     }

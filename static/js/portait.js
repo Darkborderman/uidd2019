@@ -8,12 +8,13 @@ $(document).ready(() => {
     // Resize the renderer
     app.renderer.resize(parent.clientWidth, parent.clientHeight);
 
+    let isHovered=false;
     let members = [
         {
             location: `../img/singleportait1.png`,
             width:309,
             height:550,
-            x: 150,
+            x: 170,
             y: 300,
             name: 'Tsai Han Ju/',
             brief: 'Experience/ <br><br>2017 Industrial Design Winter Exhibtion coutor<br>2017 Summer Internship in Gecko Design<br><br>Contact/<br><br>abby123445@gmail.com<br>0911-314-875'
@@ -22,7 +23,7 @@ $(document).ready(() => {
             location: `../img/singleportait2.png`,
             width:150,
             height:550,
-            x: 350,
+            x: 365,
             y: 300,
             name: '2',
             brief: '2 profile'
@@ -41,7 +42,7 @@ $(document).ready(() => {
             width:200,
             height:550,
 
-            x: 620,
+            x: 645,
             y: 300,
             name: '4',
             brief: '4 profile'
@@ -51,16 +52,28 @@ $(document).ready(() => {
             width:258,
             height:550,
 
-            x: 800,
+            x: 845,
             y: 300,
             name: '5',
             brief: '5 profile'
         },
-    ]
+    ];
+
 
 
     let bunnies = [];
     let toggleCharacter = 0;
+    
+    let background= PIXI.Sprite.from(`../img/full-portait.png`);
+    background.anchor.set(0.5);
+    background.width=988;
+    background.x=499;
+    background.height=550;
+    background.y=300;
+    app.stage.addChild(background);
+    
+    
+    
     for (let i = 0; i <= 4; i++) {
 
         //initialize each character
@@ -85,6 +98,8 @@ $(document).ready(() => {
 
     // Listen for animate update
     app.ticker.add((delta) => {
+
+        
     });
 
     function showDetail(object, members, index) {

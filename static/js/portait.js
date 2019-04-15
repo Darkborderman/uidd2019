@@ -9,27 +9,31 @@ $(document).ready(() => {
     app.renderer.resize(parent.clientWidth, parent.clientHeight);
 
     let members = [
-        {
+        {   photo:`url(https://i.imgur.com/nDvlkE1.png)`,
             location: `../img/singleportait1.png`,
             name: 'Tsai Han Ju/',
             brief: 'Experience/ <br><br>2017 Industrial Design Winter Exhibtion coutor<br>2017 Summer Internship in Gecko Design<br><br>Contact/<br><br>abby123445@gmail.com<br>0911-314-875'
         },
         {
+            
+            photo:`url(https://i.imgur.com/Ph9NmfR.png)`,
             location: `../img/singleportait2.png`,
             name:'2',
             brief:'2 profile'
         },
         {
+            photo:`url(https://i.imgur.com/gNQotMz.png)`,
             location: `../img/singleportait3.png`,
             name:'3',
             brief:'3 profile'
         },
-        {
+        {   
+            photo:`url(https://i.imgur.com/MrAJt5S.png)`,
             location: `../img/singleportait4.png`,
             name:'4',
             brief:'4 profile'
         },
-        {
+        {   photo:`url(https://i.imgur.com/mVNIjAy.png)`,
             location: `../img/singleportait5.png`,
             name:'5',
             brief:'5 profile'
@@ -51,7 +55,8 @@ $(document).ready(() => {
         //for events
         member.interactive = true;
         member.buttonMode = true;
-        member.on('pointerdown', (object) => { showDetail(object,members, i); });
+        
+        member.on('pointerdown', (object) => { showDetail(object,members,i ); });
 
         bunnies.push(member);
         app.stage.addChild(member);
@@ -89,7 +94,7 @@ $(document).ready(() => {
                 .animate({ top: "+=14%", opacity: 1 }, 1000);
         }
         $("div.name").html(members[index].name);
-        $("div.pic").css("background-image", "url(https://i.imgur.com/dnYu2CZ.png)");
+        $("div.pic").css("background-image",members[index].photo);
         $('div.brief').html(members[index].brief);
         toggleCharacter = 1;
     }

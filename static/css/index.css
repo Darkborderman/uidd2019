@@ -33,10 +33,11 @@ canvas{
 }
 
 .card{
-    width: 20.5%;
+  
+    width: 32%;
     position: fixed;
   
-    height: 45%;
+    height: 31.5%;
 }
 
 .top {

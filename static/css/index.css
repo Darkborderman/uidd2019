@@ -1,4 +1,13 @@
+html{
+    border:0px;
+    margin:0px;
+    padding:0px;
+    max-height:980px;
+}
 body{
+    border:0px;
+    margin:12.36% 13.75% 24.30% 13.75% ;
+    padding:0px;
     background: black;
 }
 h1{

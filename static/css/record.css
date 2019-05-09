@@ -48,9 +48,44 @@ body{
   width:76%;
   height:100vh;
 }
+
 .main-header{
+  display:flex;
+  width:100%;
+  flex-direction: row;
+  justify-content:space-between;
   height:13vh;
 }
+.main-logo{
+  margin-top:4vh;
+  width:13vw;
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/eloan.png");
+}
+.main-login{
+  display:flex;
+  flex-direction:row;
+  margin-top:4vh;
+
+}
+.main-option{
+  line-height:6vh;
+  height:6vh;
+  text-align: center;
+  background-color: #eeeeef;
+  color: #888888;
+  transition-duration: 0.4s;
+  width:5.45vw;
+  font-size:16px;
+  margin-right:2px;
+  border-radius:5px;
+}
+.main-option:hover{
+  color:#005584;
+  background-color:#b5d6e2;
+}
+
 .main-tablist{
   display:flex;
   flex-direction: row;

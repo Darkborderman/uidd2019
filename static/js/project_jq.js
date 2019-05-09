@@ -54,11 +54,11 @@ $(document).ready(function () {
   //右上角房子變色
   $('#topmidpic').bind({
     mouseenter: function (e) {
-      $('#topmidpic img').attr("src", "housewhite.png");
+      $('#topmidpic img').attr("src", "../img/houseSelected.png");
       $('#topmidpic').css({ "background-color": "#005584" });
     },
     mouseleave: function (e) {
-      $('#topmidpic img').attr("src", "housegray.png");
+      $('#topmidpic img').attr("src", "../img/houseDefault.png");
       $('#topmidpic').css({ "background-color": "#f7f7f7" });
 
     }
@@ -75,8 +75,8 @@ $(document).ready(function () {
     },
 
     click: function (e) {
-      $("#leftbottompic1 img").attr("src", "enter2.png");
-      $("#leftbottompic2 img").attr("src", "garbage2.png");
+      $("#leftbottompic1 img").attr("src", "../img/enterSelected.png");
+      $("#leftbottompic2 img").attr("src", "../img/garbageSelected.png");
       $("div.data").css({ "background-color": "#575757", "color": "white" });
       $('div.data').unbind('mouseenter').unbind('mouseleave');
       $('div.data2').css({ "background-color": "#f7f7f7", "color": "#888888" });
@@ -105,8 +105,8 @@ $(document).ready(function () {
     },
 
     click: function (e) {
-      $("#leftbottompic1 img").attr("src", "enter2.png");
-      $("#leftbottompic2 img").attr("src", "garbage2.png");
+      $("#leftbottompic1 img").attr("src", "../img/enterSelected.png");
+      $("#leftbottompic2 img").attr("src", "../img/garbageSelected.png");
       $("div.data2").css({ "background-color": "#575757", "color": "white" });
       $('div.data2').unbind('mouseenter').unbind('mouseleave');
       $('div.data').css({ "background-color": "#f7f7f7", "color": "#888888" });

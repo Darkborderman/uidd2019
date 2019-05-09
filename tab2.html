@@ -1,0 +1,19 @@
+<div>
+    <h2>tab2</h2>
+    <button id="button1">button1</button>
+    <button id="button2">button2</button>
+    <button id="button3">button3</button>
+    <button id="button4">button4</button>
+    <input id ="input" type="text">
+    <script>
+        document.getElementById("button1").addEventListener("click",()=>{
+        });
+        document.getElementById("input").addEventListener("blur",()=>{
+            window.top.postMessage(document.getElementById("input").value);
+        });
+        window.onmessage=function(e){
+            console.log(e)
+            document.getElementById("input").value=e.data;
+        }
+    </script>
+</div>

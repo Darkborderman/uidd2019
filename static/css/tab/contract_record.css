@@ -1,0 +1,27 @@
+/*HTML body and main container*/
+body{
+    margin:0;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
+/*Category List*/
+.category-list{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:100%;
+    margin-top:2vh;
+}
+.category{
+    color:#005584;
+    background-color:#EFF6F9;
+    font-size:20px;
+    margin-left:1%;
+    margin-right:1%;
+    border-radius:5px;
+    font-family:微軟正黑體;
+}

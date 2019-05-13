@@ -15,6 +15,7 @@ body{
     justify-content: space-between;
     width:100%;
     margin-top:2vh;
+    margin-bottom: 2vh;
 }
 .category{
     color:#005584;
@@ -24,4 +25,71 @@ body{
     margin-right:1%;
     border-radius:5px;
     font-family:微軟正黑體;
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    background-color:#EFF6F9;
+    color:#005584;
+    margin-bottom: 2vh;
+}
+.description{
+    width:80%;
+    color:#595757;
+    background-color: #F7F7F7;
+}
+.product{
+    display:flex;
+    flex-direction: row;
+}
+
+/*  for first form only
+    Code was ugly, I'll regret later
+*/
+hr{
+    display: block;
+    color:black;
+    width:99%;
+}
+.profit{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 5vh;
+}
+.profit-title{
+    display:flex;
+    flex-direction: row;
+}
+.part-1{
+    flex: 1 1 0;
+}
+.part-2{
+    flex: 2 1 0;
+}
+.part-3{
+    flex: 3 1 0;
+}
+.part-4{
+    flex: 4 1 0;
+}
+.profit-title > div:not(:last-child) {
+    border-right: 1px solid;
+}
+.profit-description{
+    display:flex;
+    flex-direction: row;
+}
+.profit-description > div:not(:last-child) {
+    border-right: 1px solid;
+}
+.profit-form{
+    display:flex;
+    flex-direction: row;
+    background:white;
+}
+.profit-form > div:not(:last-child) {
+    border-right: 1px solid;
+}
+textarea{
+    width:99%;
 }

@@ -1,37 +1,37 @@
-// let isHide=[false,false];
-// document.getElementById("categoryControl").addEventListener("click",(event)=>{
-//     if(isHide[0]==false||isHide[1]==false){
-//         document.querySelectorAll(".section > *").forEach((element)=>{
-//             element.style.display="none";
-//         });
-//         isHide=[true,true];
-//     }
-//     else{
-//         document.querySelectorAll(".section > *").forEach((element)=>{
-//             element.style.display="inline-block";
-//         });
-//         isHide=[false,false];
-//     }
-// },true);
-// document.querySelectorAll(".section").forEach((element,index)=>{
-//     element.addEventListener("click",(event)=>{
-//         if(event.target==event.currentTarget){
-//             if(isHide[index]==false){
-//                 for(item of element.children){
-//                     item.style.display='none';
-//                     isHide[index]=true;
-//                 }
-//             }
-//             else{
-//                 for(item of element.children){
-//                     item.style.display='inline-block';
-//                     isHide[index]=false;
-//                 }
-//             }
-//         }
+let isHide=[false,false];
+document.getElementById("categoryControl").addEventListener("click",(event)=>{
+    if(isHide[0]==false||isHide[1]==false){
+        document.querySelectorAll(".block").forEach((element)=>{
+            element.style.display="none";
+        });
+        isHide=[true,true];
+    }
+    else{
+        document.querySelectorAll(".block").forEach((element)=>{
+            element.style.display="inline-block";
+        });
+        isHide=[false,false];
+    }
+},true);
+document.querySelectorAll("#content").forEach((element,index)=>{
+    element.addEventListener("click",(event)=>{
+        if(event.target==event.currentTarget){
+            if(isHide[index]==false){
+                document.querySelectorAll(".block").forEach((element)=>{
+                    element.style.display="none";
+                });
+                isHide[index]=true;
+            }
+            else{
+                document.querySelectorAll(".block").forEach((element)=>{
+                    element.style.display="inline-block";
+                });
+                isHide[index]=false;
+            }
+        }
 
-//     });
-// },false);
+    });
+},false);
 //0-13 form 1
 let inputList=[];
 for(let i=0;i<=12;i++){

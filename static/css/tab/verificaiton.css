@@ -15,7 +15,7 @@ body, html {
 
 #content {
   width: 1382px;
-  height: 1158.65px;
+  height: auto;
   background: #eff6f9;
   color: #005584;
   border-radius: 10px;
@@ -150,4 +150,21 @@ body, html {
   border-radius: 3px;
 }
 
-/*  */
+.control{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-left:3%;
+  margin-right:3%;
+}
+.control-item{
+  text-align: center;
+  background: #eff6f9;
+  font-family: 微軟正黑體;
+  font-size:20px;
+  width:5%;
+  height: 6vh;
+  line-height: 6vh;
+  border-radius: 10px;
+  color:#005584;
+}

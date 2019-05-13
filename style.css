@@ -1,0 +1,150 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 1435px;
+  height: 1158px;
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff;
+}
+
+#content {
+  width: 1382px;
+  height: 1158.65px;
+  background: #eff6f9;
+  color: #005584;
+  border-radius: 10px;
+  margin: 22.35px 25.61px 0px 25.61px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 13.2px 18.86px;
+}
+
+#c1 {
+  font-size: 20px;
+  font-weight: 400;
+  left: 650px;
+}
+
+#c2 {
+  font-size: 20px;
+  font-weight: 400;
+  left: 800px;
+}
+
+.block {
+  width: 1350.75px;
+  height: auto;
+  background: #ffffff;
+  color: #005584;
+  border-radius: 10px;
+  margin-top: 22.35px;
+  padding: 15.8px 16px;
+}
+
+#con1 {
+  width: 1319px;
+  height: auto;
+  background: #f7f7f7;
+  color: #595757;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7.32px 13.21px;
+}
+
+#con2 {
+  width: 1319px;
+  height: auto;
+  color: #005584;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.input {
+  display: inline-block;
+  padding: 0px 6.5px;
+}
+.input span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.input input {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+#con3 {
+  width: 1319px;
+  height: 112.58px;
+  background: #f7f7f7;
+  color: #595757;
+  border-radius: 5px;
+  background-image: url("https://i.imgur.com/M8BKtJV.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#con4 {
+  width: 1319px;
+  height: 154.39px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-image: url("https://i.imgur.com/gAQYqCl.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#con5 {
+  width: 1319px;
+  height: auto;
+  background: #f7f7f7;
+  color: #595757;
+  border-radius: 5px;
+  padding: 7.32px 13.21px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#con6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+#con7 {
+  width: 1319px;
+  height: 88.09px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-image: url("https://i.imgur.com/8y2PEZv.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#con8 {
+  width: 1319px;
+  height: auto;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+#con9 {
+  width: 1319px;
+  height: 88.04px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+#con9 textarea {
+  border-radius: 3px;
+}

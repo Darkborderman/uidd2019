@@ -6,7 +6,7 @@ content.addEventListener("loadend",()=>{
 });
 
 //Implement tablist
-let tabList=["contract_form","contract_record","applicant_form","record_report","scanning"];
+let tabList=["contract_form","verification","applicant_form","record_report","scanning"];
 
 tabList.forEach((tab)=>{
     document.getElementById(tab).addEventListener("click",()=>{

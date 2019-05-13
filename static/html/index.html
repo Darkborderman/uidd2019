@@ -6,31 +6,68 @@
 </head>
 
 <body>
-	<header>
-		<img id="left" src="../img/eloan.png" width="13.2%" height="3.75%">
-			<span class="top1"><button class="button2">連絡窗口</button></span>
-			<span class="top2"><button class="button3">登出系統</button></span>
-	</header>
+	<div class="container">
+		<aside class="info">
+		</aside>
+		<div class="main">
+			<div class="main-header">
+				<div class="main-logo"></div>
+				<div class="main-login">
+					<div class="main-option">聯絡窗口</div>
+					<div class="main-option">登出系統</div>
+				</div>
+			</div>
+			<div class="main-space">
+				<div class="main-path">
+					<img src="../img/houseSelected.png" width="40%">
+				</div>
+			</div>
+			<div class="main-categoryList">
+				<div class="main-category" id="list">待辦事項</div>
+				<div class="main-category" id="unimplemented">個金案件申請</div>
+				<div class="main-category" id="unimplemented">申貸中客戶管理</div>
+				<div class="main-category" id="unimplemented">查詢</div>
+				<div class="main-category" id="unimplemented">報表</div>
+				<div class="main-category" id="unimplemented">代理人作業</div>
+			</div>
+			<div class="main-categoryList">
+				<div class="main-category" id="unimplemented">參考檔設定</div>
+				<div class="main-category" id="unimplemented">短期展期/覆審作業</div>
+				<div class="main-category" id="unimplemented">風險管理</div>
+				<div class="main-category" id="unimplemented">經常管理</div>
+				<div class="main-category" id="unimplemented">企金估價申請</div>
+				<div class="main-category" id="unimplemented">個金整合房貸申請</div>
+			</div>
 
-	<div class="tag">
+			<div class="main-space"></div>
+			<div class="main-message">宣達事項</div>
+			<div class="message-container">
+				<div class="message-row">
+					<a href="http://www.runoob.com/html/html-links.html#tips">> 永豐風雲房貸-線上增貸</a>
+					<div>2019-01-01</div>
+				</div>
+				<div class="message-row">
+					<a href="http://www.runoob.com/html/html-links.html#tips">> 永豐風雲房貸-線上增貸</a>
+					<div>2019-01-01</div>
+				</div>
+				<div class="message-row">
+					<a href="http://www.runoob.com/html/html-links.html#tips">> 永豐風雲房貸-線上增貸</a>
+					<div>2019-01-01</div>
+				</div>
+				<div class="message-row">
+					<a href="http://www.runoob.com/html/html-links.html#tips">> 永豐風雲房貸-線上增貸</a>
+					<div>2019-01-01</div>
+				</div>
+				<div class="message-row">
+					<a href="http://www.runoob.com/html/html-links.html#tips">> 永豐風雲房貸-線上增貸</a>
+					<div>2019-01-01</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- <div class="tag">
 		<img id="right" src="../img/home.png" height="100%" width="50%">
-	</div>
-
-	<div class="css_tr">
-		<button class="category" id="list">待辦事項</button>
-		<button class="category" id="unimplemented">個金案件申請</button>
-		<button class="category" id="unimplemented">申貸中客戶管理</button>
-		<button class="category" id="unimplemented">查詢</button>
-		<button class="category" id="unimplemented">報表</button>
-		<button class="category" id="unimplemented">代理人作業</button>
-	</div>
-	<div class="css_tr">
-		<button class="category" id="unimplemented">參考檔設定</button>
-		<button class="category" id="unimplemented">短期展期/覆審作業</button>
-		<button class="category" id="unimplemented">風險管理</button>
-		<button class="category" id="unimplemented">經常管理</button>
-		<button class="category" id="unimplemented">企金估價申請</button>
-		<button class="category" id="unimplemented">個金整合房貸申請</button>
 	</div>
 
 	<div class="space"></div>
@@ -85,19 +122,23 @@
 	</div>
 	<div class="history">
 		<input type="button" value="歷史宣達事項">
-	</div>
+	</div>-->
 
-	<script>
-		document.getElementById("list").addEventListener("click", () => {
-			window.location.href = "./list.html";
-		});
-		document.querySelectorAll("#unimplemented").forEach((element) => {
-			element.addEventListener("click", () => {
-				alert("尚未實作!");
+		<script>
+			document.getElementById("list").addEventListener("click", () => {
+				window.location.href = "./list.html";
 			});
-		});
-	</script>
-	<link href="../css/index.css" rel="stylesheet">
+			document.querySelectorAll("#unimplemented").forEach((element) => {
+				element.addEventListener("click", () => {
+					alert("尚未實作!");
+				});
+			}); 
+		</script>
+		<aside class="result">
+		</aside>
+
+		<link href="../css/index.css" rel="stylesheet">
+	</div>
 </body>
 
 </html>

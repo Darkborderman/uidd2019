@@ -11,5 +11,10 @@ let tabList=["contract_form","contract_record","applicant_form","record_report",
 tabList.forEach((tab)=>{
     document.getElementById(tab).addEventListener("click",()=>{
         content.src=`./tab/${tab}.html`;
+        for(item of tabList){
+            document.getElementById(item).style.backgroundColor="#f7f7f7";
+        }
+        document.getElementById(tab).style.backgroundColor="#efefef";
+
     });
 });

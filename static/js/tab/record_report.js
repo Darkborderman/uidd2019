@@ -13,4 +13,14 @@ document.getElementById("categoryControl").addEventListener("click",()=>{
         });
         isHide=false;
     }
-})
+});
+
+//Setup content when iframe loaded
+let content=document.getElementById("content");
+content.addEventListener("loadend",()=>{
+    content.src="../category/overview.html"; 
+});
+
+document.getElementById("query_record").addEventListener("click",()=>{
+    content.src="../category/query_record.html";
+});

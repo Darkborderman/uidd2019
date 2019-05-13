@@ -35,4 +35,5 @@ body{
 /*Content*/
 .content{
     border-style:none;
+    height:100%;
 }

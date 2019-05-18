@@ -1,0 +1,128 @@
+*{
+   font-family: 微軟正黑體;
+   position: relative;
+   box-sizing: border-box;
+   font-weight: bold;
+   color:#005584;
+   font-size: 16px;
+}
+#content{
+	width:1383.78px;
+    height:993.47px;
+    background-color: #eff6f9;
+    border-radius :20px;
+}
+#title{
+	margin-left:30px;
+	top:15px;
+	font-size: 20px;
+}
+#uppercontent{
+	top:25px;
+	margin-left: 20px;
+}
+.middleblock{
+	background-color: white;
+	width:1352px;
+	height:120px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.midform-1th{
+	display: inline-block;
+}
+.midform-1th select{
+	width:100px;
+}
+.middlecontent{
+	top: 14px;
+	left:20px;
+}
+.middleblock-second{
+	margin-top: 1px;
+	height:90px; 
+}
+.midsecondfill{
+	width:100px;
+}
+.midsecondcontent{
+	top:15px;
+	margin-left: 60px;
+	display: inline-block;
+}
+.middleblock-third{
+	height:90px;
+	width:1352px;
+	background-color: white;
+	margin-left:20px;
+	margin-top: 1px;
+}
+.midthirdcontent{
+	margin-left: 60px;
+	top:15px;
+	display: inline-block;
+}
+.midthirdform select{
+	width:100px;
+}
+.midthirdcontent-special1{
+	margin-left: 75px;
+}
+.mid3button{
+	background-color: #888888;
+	color:white;
+	font-size: 13.5px;
+	border-radius: 5px;
+	font-weight: lighter;
+}
+.midthirdcontent-special2{
+	margin-left: 64px;
+}
+.bottomblock{
+	width:1352px;
+	height: 140px;
+	margin-top: 2px;
+	margin-left: 20px;
+	background-color: white;
+	display: inline-block;
+}
+.botcontent{
+	margin-left: 60px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.bottomfill{
+	width:30px;
+}
+.bottomselect{
+	margin-left: 8.5px;
+	width:100px;
+}
+input[name='botfillin2']{
+	margin-left: 75px;
+	width:60px;
+}
+input[name='bottomcheckbox2']{
+	margin-left: 85px;
+}
+.bottomselect2{
+	margin-left: 16px;
+	width:100px;
+}
+.bottomselect3{
+	margin-left: 44px;
+	width:40px;
+}
+input[name='botfillin3']{
+	margin-left: 64px;
+	width:50px;
+}
+input[name='botfillin4']{
+	margin-left: 40px;
+	width:50px;
+}
+.botcontent2{
+	margin-left: 60px;
+	margin-top: 30px;
+	display: inline-block;
+}

@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>記錄頁面</title>
-    <link rel="stylesheet" href="../css/record.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
+    <div class="header">
+        <div class="header-logo"></div> 
+        <div class="header-login">
+            <div class="header-option">聯絡窗口</div>
+            <div class="header-option">登出系統</div>
+        </div>
+        <div class="header-member">員工編號:103707 日期:2018/01/29</div>
+    </div> 
     <div class="container">
         <aside class="info">
             <div>
-                <div class="info-space"></div>
                 <div class="info-title">客戶文件夾</div>
                 <div class="info-description">信用貸款<br>消金TM豐利金<br>陳小明<br>L1234556789056</div>
-                <div class="info-record">▣ 各項紀錄</div>
+                <div class="info-record">各項紀錄</div>
             </div>
         </aside>
+
         <div class="main">
-            <div class="main-header">
-                <div class="main-logo"></div>
-                <div class="main-login">
-                    <div class="main-option">聯絡窗口</div>
-                    <div class="main-option">登出系統</div>
-                </div>
-            </div>
             <div class="main-tablist">
                 <div class="main-tab" id="contract_form">核貸書</div>
                 <div class="main-tab" id="verification">核貸紀錄</div>
@@ -35,15 +36,7 @@
                 <iframe class="tab-content" id="tab-content"></iframe>
             </div>
         </div> 
-        <aside class="result">
-            <div class="result-space"></div>
-            <div class="result-option">同意</div>
-            <div class="result-option">不予承作</div>
-            <div class="result-option">退回</div>
-            <div class="result-option">轉承</div>
-            <div class="result-option">調整簽核流程</div>
-            <div class="result-option">線審</div>
-        </aside>
+
     </div>
     <script defer src="../js/record.js"></script>
 </body>

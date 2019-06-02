@@ -1,0 +1,145 @@
+*{
+	font-family:微軟正黑體;
+}
+.container{
+	width:1920px;
+	height:1080px;
+	background-color: white;
+	z-index: 3;
+}
+.jumpout_form{
+	width:53%;
+	height:15%;
+	background-color: white;
+	border-radius: 15px;
+    position: relative;
+    left: 23.5%;
+    top:42.5%;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	opacity: 0;
+	z-index: 2;
+}
+#form_text{
+	width:95%;
+	text-align: center;
+	font-size: 30px;
+	line-height: 60px;
+	color: #595757;
+    font-weight: bold;
+}
+#form_cancel{
+	width:5%;
+}
+.SelectButton{
+	width:15%;
+	height: 39%;
+	border-radius: 12px;
+	border-style: solid;
+	border-width: 2.5px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 60px;
+	font-weight: bold;
+	color: white;
+}
+.left4Button{
+	background-color: #005584;
+    border-color: #005584;
+}
+.right2Button{
+	background-color: #888888;
+	border-color: #888888;
+}
+.left4Button:hover{
+	background-color: white;
+	color: #005584;
+	border-color: #005584;
+}
+.jumpout_form2{
+	position: relative;
+	left: 22.15%;
+	top:18.5%;
+	width: 55.7%;
+	height: 33.14%;
+	background-color: white;
+	border-radius: 15px;
+	opacity: 0;
+	z-index: 1;
+}
+.SelectedButton{
+	position: relative;
+	display: inline-block;
+	top:20%;
+	left:1.8%;
+	width: 15%;
+	height: 17.6%;
+	border-radius: 12px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 60px;
+	background-color: #005584;
+	font-weight: bold;
+	color: white;
+}
+.SelectOption{
+	position: relative;
+	display: inline-block;
+	width:7%;
+	height: 10%;
+	top:20%;
+	margin-left: 8%;
+	font-size: 20px;
+	color: #595757;
+}
+.SelectOption2{
+	position: relative;
+	top:20%;
+	display:inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	width:21%;
+	height: 70%;
+	margin-left: 8%; 
+	font-size: 20px;
+	color: #595757;
+}
+#form2_cancel{
+	position: relative;
+	top:1%;
+	left:95%;
+
+}
+.decide_back_block{
+	position: relative;
+	width: 25%;
+	height: 12.2%;
+	bottom:9.5%;
+	left:74%;
+	
+}
+.decide_back_button{
+	display: inline-block;
+	width:30%;
+	height: 100%;
+	border-radius: 12px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 45px;
+	background-color: #005584;
+	font-weight: bold;
+	color: white;
+	margin-left: 25%;
+	border-color: #005584;
+	border-style: solid;
+	border-width: 2.5px;
+}
+.back_button{
+	margin-left: 5%;
+}
+.decide_back_button:hover{
+	background-color: white;
+	color: #595757;
+	border-color: #595757;
+}

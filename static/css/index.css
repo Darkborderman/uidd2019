@@ -1,9 +1,12 @@
 /*HTML body and main container*/
+
 /*圖層:遮罩層:0 跳出頁二:1 跳出頁一:2 container:3;*/
+
 body{
   margin:0;
   padding:0;
 }
+
 *{
   font-family:微軟正黑體;
 }
@@ -64,6 +67,7 @@ body{
 .info{
   width:10%;
 }
+
 .info-title{
   text-align:center;
   background-color:#eff6f9;
@@ -250,7 +254,6 @@ body{
   position: relative;
   top:1%;
   left:95%;
-
 }
 .decide_back_block{
   position: relative;
@@ -258,7 +261,6 @@ body{
   height: 12.2%;
   bottom:9.5%;
   left:74%;
-  
 }
 .decide_back_button{
   display: inline-block;

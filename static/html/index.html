@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>記錄頁面</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <!--遮罩層-->
+    <div id="cover"></div>
+    <div class="header">
+        <div class="header-logo"></div> 
+        <div class="header-login">
+            <div class="header-option">聯絡窗口</div>
+            <div class="header-option">登出系統</div>
+        </div>
+        <div class="header-member">員工編號:103707 日期:2018/01/29</div>
+    </div> 
+    <div class="container">
+        <aside class="info">
+            <div>
+                <div class="info-title">客戶文件夾</div>
+                <div class="info-description">信用貸款<br>消金TM豐利金<br>陳小明<br>L1234556789056</div>
+                <div class="info-record">各項紀錄</div>
+                <button id="Nextstep">Next Step</button>
+            </div>
+        </aside>
+
+        <div class="main">
+            <div class="main-tablist">
+                <div class="main-tab" id="contract_form">核貸書</div>
+                <div class="main-tab" id="verification">核貸紀錄</div>
+                <div class="main-tab" id="applicant_form">申請書</div>
+                <div class="main-tab" id="record_report">徵信報告</div>
+                <div class="main-tab" id="scanning">掃描檔案</div>
+            </div>
+            <div class="main-content">
+                <iframe class="tab-content" id="tab-content"></iframe>
+            </div>
+        </div> 
+        <!--Next step jump out-->
+        <div class='jumpout_form'>
+        <div id='form_text'>請選擇下一步作業選項</div>
+        <div id='form_cancel'><img src="../img/xx.png"></div>
+        <div class='SelectButton left4Button agree'>
+            同意
+        </div>
+        <div class='SelectButton left4Button donot'>
+            不予承作
+        </div>
+        <div class='SelectButton left4Button getback'>
+            退回
+        </div>
+        <div class='SelectButton left4Button trans'>
+            轉呈
+        </div>
+        <div class='SelectButton right2Button'>
+            調整核簽流程
+        </div>
+        <div class='SelectButton right2Button'>
+            線審
+        </div>
+    </div>
+    <div class='jumpout_form2'>
+        <div id='form2_cancel'><img src="../img/xx.png"></div>
+        <div class='SelectedButton'>同意</div>
+        <div class='SelectOption'>
+            <input type="checkbox" value="1" name="ckbox1">
+            <span>全選</span>
+        </div>
+        <div class='SelectOption2'>
+            <div>
+                <input type="checkbox" value="1" class="ckbox1">
+                <span>核貸條件</span>
+            </div>
+            <div>
+                <input type="checkbox" value="1" class="ckbox1">
+                <span>利率條件</span>
+            </div>
+            <div>
+                <input type="checkbox" value="1" class="ckbox1">
+                <span>費用減免</span>
+            </div>
+            <div>
+                <input type="checkbox" value="1" class="ckbox1">
+                <span>文件候補</span>
+            </div>
+            <div>
+                <input type="checkbox" value="1" class="ckbox1">
+                <span>提前違約金</span>
+            </div>
+            <div>
+                <input type="checkbox" value="1" class="ckbox1">
+                <span>利害關係人授<br> &emsp;&nbsp;信檢核表</span>
+            </div>
+            <div>
+                <input type="checkbox" value="1" class="ckbox1">
+                <span>申覆</span>
+            </div>
+        </div>
+        <div class='decide_back_block'>
+            <div class='decide_back_button decide_button'>
+                確定
+            </div>
+            <div class='decide_back_button back_button'>返回
+            </div>
+        </div>
+    </div>
+
+    </div>
+    
+</body>
+
+</html>

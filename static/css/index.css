@@ -89,14 +89,30 @@ body{
 }
 .info-record{
   text-align:center;
-  background: #f7f7f7;
-  color: #888888;
+  background: #888888;
+  color: #FFFFFF;
   height:3.35vh;
-  border-radius:5px;
 }
 
 summary{
-  background-color:green;
+  background-color: #F7F7F7;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary ::-moz-list-bullet {
+  font-size: 0;
+}
+
+summary::after{
+  content: '';
+  position: absolute;
+  width: 1em; height: 1em;
+  margin: .2em 0 0 .5ch;
+  background: url(../img/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  transition: 2s;
 }
 
 /*main content*/

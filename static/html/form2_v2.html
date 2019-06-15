@@ -1,181 +1,194 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="../css/formstyle2_v2.css">
-	<title>page2</title>
-</head>
-<body>
-<div id="content">
-  <div id="title">核委意見</div>
-<!--上方圖片區-->
-  <div id="uppercontent"><img src="top.png"></div>
-<!-- 中從上數下來第一塊-->
-  <div class="middleblock">
-    <div class="middlecontent">
-      <input type="radio" value="1" name="midinput-1th">
-      <span>貸款產品</span><br>
-      <input type="radio" value="1" name="midinput-2ed">
-      <span>同模型</span><br>
-      <input type="radio" value="1" name="midinput-3th">
-      <span>同核貸委員</span>
-      <div class="midform-1th"><form>
-      <select>
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      </form></div><br>
-      <input type="radio" value="1" name="midinput-4th">
-      <span>自行輸入</span>
-    </div>
-  </div>
-<!--中上第二塊-->
-  <div class="middleblock middleblock-second">
-    <div class='midsecondcontent'>
-      <span>貸款產品</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-    </div>
-    <div class='midsecondcontent '>
-      <input type="checkbox" value="11" name="ckbox1">
-      <span>連保</span>
-      <input type="checkbox" value="11" name="ckbox2">
-      <span>一般</span>
-    </div>
-    <div class='midsecondcontent'>
-      <span>金額</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-    </div>
-    <div class='midsecondcontent'>
-      <span>可使用額度</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-    </div>
-    <div class='midsecondcontent'>
-      <span>總期數</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-    </div>
-    <div class='midsecondcontent'>
-      <span>展期次數</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-    </div>
-    <div class='midsecondcontent'>
-      <span>利率</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-    </div>
-<!-- 中上第三塊-->
-  </div>
-  <div class=middleblock-third>
-     <div class=midthirdcontent>
-      <span>資金用途別</span><br>
-      <div class="midthirdform"><form>
-      <select  >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      </form></div>
-     </div>
-     <div class=midthirdcontent>
-      <span>還款方式</span><br>
-      <div class="midthirdform"><form>
-      <select  >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      </form></div>
-     </div>
-     <div class='midthirdcontent midthirdcontent-special1'>
-      <span>先收息期數</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-     </div>
 
-     <div class="midthirdcontent midthirdbutton">
-       <div>
-        <button class="mid3button" name="butup">計算風險定價</button> 
-      </div>
-      <div>
-        <button class="mid3button" name="butdown">計算全案定價</button>
-      </div>
-     </div>
-     <div class='midthirdcontent midthirdcontent-special2'>
-      <span>風險定價</span><br>
-      <div class="midthirdform"><form>
-      <select  >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      </form></div>
-     </div>
-        <div class='midthirdcontent'>
-      <span>風險定價期數</span><br>
-      <div class="midthirdform"><form>
-      <select  >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      </form></div>
-     </div>
-     <div class='midthirdcontent '>
-      <span>風險權數</span><br>
-      <input type="text" class ="midsecondfill" name="fillin1">
-     </div>
-  </div>
-<!--最底部區塊 -section1-->
-  <div class="bottomblock">
-    <div class="botcontent">
-      <span>第</span>
-      <input type="text" class ="bottomfill" name="fillin1">
-      <span>期起‧         </span>
-      <input type="checkbox" value="11" name="bottomcheckbox">
-      <span>固定</span>
-      <select class="bottomselect" >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      <input type="text" class ="bottomfill" name="botfillin2">
-      <span>%</span>
-      <input type="checkbox" value="11" name="bottomcheckbox2">
-      <span>固定</span>
-      <select class="bottomselect2" >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      <select class="bottomselect3" >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      <input type="text" class ="bottomfill" name="botfillin3">
-      <span>%‧ 目前利率</span>
-       <input type="text" class ="bottomfill" name="botfillin4">
-       <span>%</span>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/formstyle2_v2.css">
+    <title>page2</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="title">核委意見</div>
+        <!--上方圖片區-->
+        <div id="uppercontent"><img src="top.png"></div>
+        <!-- 中從上數下來第一塊-->
+        <div class="middleblock">
+            <div class="middlecontent">
+                <input type="radio" value="1" name="midinput-1th">
+                <span>貸款產品</span><br>
+                <input type="radio" value="1" name="midinput-2ed">
+                <span>同模型</span><br>
+                <input type="radio" value="1" name="midinput-3th">
+                <span>同核貸委員</span>
+                <div class="midform-1th">
+                    <form>
+                        <select>
+                            　 <option value="one">-</option>
+                            　 <option value="two">-</option>
+                        </select>
+                    </form>
+                </div><br>
+                <input type="radio" value="1" name="midinput-4th">
+                <span>自行輸入</span>
+            </div>
+        </div>
+        <!--中上第二塊-->
+        <div class="middleblock middleblock-second">
+            <div class='midsecondcontent'>
+                <span>貸款產品</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+            <div class='midsecondcontent '>
+                <input type="checkbox" value="11" name="ckbox1">
+                <span>連保</span>
+                <input type="checkbox" value="11" name="ckbox2">
+                <span>一般</span>
+            </div>
+            <div class='midsecondcontent'>
+                <span>金額</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+            <div class='midsecondcontent'>
+                <span>可使用額度</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+            <div class='midsecondcontent'>
+                <span>總期數</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+            <div class='midsecondcontent'>
+                <span>展期次數</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+            <div class='midsecondcontent'>
+                <span>利率</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+            <!-- 中上第三塊-->
+        </div>
+        <div class=middleblock-third>
+            <div class=midthirdcontent>
+                <span>資金用途別</span><br>
+                <div class="midthirdform">
+                    <form>
+                        <select>
+                            　 <option value="one">-</option>
+                            　 <option value="two">-</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class=midthirdcontent>
+                <span>還款方式</span><br>
+                <div class="midthirdform">
+                    <form>
+                        <select>
+                            　 <option value="one">-</option>
+                            　 <option value="two">-</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class='midthirdcontent midthirdcontent-special1'>
+                <span>先收息期數</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+
+            <div class="midthirdcontent midthirdbutton">
+                <div>
+                    <button class="mid3button" name="butup">計算風險定價</button>
+                </div>
+                <div>
+                    <button class="mid3button" name="butdown">計算全案定價</button>
+                </div>
+            </div>
+            <div class='midthirdcontent midthirdcontent-special2'>
+                <span>風險定價</span><br>
+                <div class="midthirdform">
+                    <form>
+                        <select>
+                            　 <option value="one">-</option>
+                            　 <option value="two">-</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class='midthirdcontent'>
+                <span>風險定價期數</span><br>
+                <div class="midthirdform">
+                    <form>
+                        <select>
+                            　 <option value="one">-</option>
+                            　 <option value="two">-</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class='midthirdcontent '>
+                <span>風險權數</span><br>
+                <input type="text" class="midsecondfill" name="fillin1">
+            </div>
+        </div>
+        <!--最底部區塊 -section1-->
+        <div class="bottomblock">
+            <div class="botcontent">
+                <span>第</span>
+                <input type="text" class="bottomfill" name="fillin1">
+                <span>期起‧ </span>
+                <input type="checkbox" value="11" name="bottomcheckbox">
+                <span>固定</span>
+                <select class="bottomselect">
+                    　 <option value="one">-</option>
+                    　 <option value="two">-</option>
+                </select>
+                <input type="text" class="bottomfill" name="botfillin2">
+                <span>%</span>
+                <input type="checkbox" value="11" name="bottomcheckbox2">
+                <span>固定</span>
+                <select class="bottomselect2">
+                    　 <option value="one">-</option>
+                    　 <option value="two">-</option>
+                </select>
+                <select class="bottomselect3">
+                    　 <option value="one">-</option>
+                    　 <option value="two">-</option>
+                </select>
+                <input type="text" class="bottomfill" name="botfillin3">
+                <span>%‧ 目前利率</span>
+                <input type="text" class="bottomfill" name="botfillin4">
+                <span>%</span>
+            </div>
+            <!-- bottom section2-->
+            <div class="botcontent2">
+                <span>第</span>
+                <input type="text" class="bottomfill" name="fillin1">
+                <span>期起‧ </span>
+                <input type="checkbox" value="11" name="bottomcheckbox">
+                <span>固定</span>
+                <select class="bottomselect">
+                    　 <option value="one">-</option>
+                    　 <option value="two">-</option>
+                </select>
+                <input type="text" class="bottomfill" name="botfillin2">
+                <span>%</span>
+                <input type="checkbox" value="11" name="bottomcheckbox2">
+                <span>固定</span>
+                <select class="bottomselect2">
+                    　 <option value="one">-</option>
+                    　 <option value="two">-</option>
+                </select>
+                <select class="bottomselect3">
+                    　 <option value="one">-</option>
+                    　 <option value="two">-</option>
+                </select>
+                <input type="text" class="bottomfill" name="botfillin3">
+                <span>%‧ 目前利率</span>
+                <input type="text" class="bottomfill" name="botfillin4">
+                <span>%</span>
+            </div>
+
+        </div>
     </div>
-    <!-- bottom section2-->
-    <div class="botcontent2">
-      <span>第</span>
-      <input type="text" class ="bottomfill" name="fillin1">
-      <span>期起‧         </span>
-      <input type="checkbox" value="11" name="bottomcheckbox">
-      <span>固定</span>
-      <select class="bottomselect" >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      <input type="text" class ="bottomfill" name="botfillin2">
-      <span>%</span>
-      <input type="checkbox" value="11" name="bottomcheckbox2">
-      <span>固定</span>
-      <select class="bottomselect2" >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      <select class="bottomselect3" >
-　     <option value="one">-</option>
-　     <option value="two">-</option>
-      </select>
-      <input type="text" class ="bottomfill" name="botfillin3">
-      <span>%‧ 目前利率</span>
-       <input type="text" class ="bottomfill" name="botfillin4">
-       <span>%</span>
-    </div>
-    
-  </div>
-</div>
 </body>
+
 </html>

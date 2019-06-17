@@ -1,0 +1,101 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 1577px;
+  height: 3200px;
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff;
+}
+
+.content {
+  width: 1523.41px;
+  height: 3150px;
+  background: #DEDFE0;
+  color: #595757;
+  border-radius: 10px;
+  margin: 22.35px 25.61px 0px;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 13.2px 18.86px;
+}
+
+.block {
+  width: 1487.05px;
+  height: auto;
+  background: #ffffff;
+  color: #595757;
+  border-radius: 10px;
+  margin-top: 22.35px;
+  padding: 10px 16px;
+}
+
+.w {
+  margin: 15px 0px;
+}
+
+.w1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 30px;
+}
+
+.w2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+.pic {
+  background-size: cover;
+  background-position: center;
+  margin: 15px 0px;
+}
+
+#pic1 {
+  width: 1452.46px;
+  height: 315px;
+  background-image: url("https://i.imgur.com/1QP1h6J.png");
+}
+
+#pic2 {
+  width: 1452.46px;
+  height: 562px;
+  background-image: url("https://i.imgur.com/XFrdTUv.png");
+}
+
+.con {
+  width: 1452.46px;
+  height: 250px;
+  background: #F7F7F7;
+}
+
+.input {
+  display: inline-block;
+  padding: 0px 20px;
+  color: #005584;
+}
+.input span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.input input {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.c {
+  font-size: 20px;
+  font-weight: 600;
+  color: #005584;
+}
+
+#pic2 {
+  width: 1452.46px;
+  height: 170px;
+  background-image: url("https://i.imgur.com/BYnf22T.png");
+}

@@ -1,0 +1,281 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 1577px;
+  height: 3258px;
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff;
+}
+
+.content {
+  width: 1523.41px;
+  height: 423.09px;
+  background: #DEDFE0;
+  color: #595757;
+  border-radius: 10px;
+  margin: 22.35px 25.61px 0px;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 13.2px 18.86px;
+}
+
+#c1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 700px;
+}
+
+#c2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 180px;
+}
+
+.block {
+  width: 1487.05px;
+  height: auto;
+  background: #ffffff;
+  color: #595757;
+  border-radius: 10px;
+  margin-top: 22.35px;
+  padding: 10px 16px;
+}
+
+#con1 {
+  width: 1452.46px;
+  height: 310px;
+  background-image: url("https://i.imgur.com/1QP1h6J.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#content2 {
+  width: 1523.41px;
+  height: 520px;
+}
+
+.con {
+  width: 1487px;
+  height: 120px;
+  color: #005584;
+  margin: 20px 0px;
+}
+
+#second.block {
+  color: #005584;
+}
+
+#content3 {
+  width: 1523.41px;
+  height: auto;
+}
+
+#con5 {
+  width: 1452.46px;
+  height: auto;
+  background: #f7f7f7;
+  color: #595757;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 7.32px 13.21px;
+}
+
+#c3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 820px;
+}
+
+#c4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 150px;
+}
+
+#con6 {
+  width: 1452.46px;
+  height: auto;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.input {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.input span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.input input {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+#con7 {
+  width: 1452.46x;
+  height: 160px;
+  background-image: url("https://i.imgur.com/qMueQyG.png");
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+}
+
+#con8 {
+  width: 1452.46x;
+  height: 160px;
+  background-image: url("https://i.imgur.com/yg01qNG.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#con9 {
+  width: 1452.46px;
+  height: auto;
+  background: #f7f7f7;
+  color: #595757;
+  border-radius: 5px;
+  padding: 7.32px 13.21px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+
+#con10 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+#con11 {
+  width: 1452.46px;
+  height: 96.98px;
+  background-image: url("https://i.imgur.com/9FInJZm.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#content4 {
+  width: 1523.41px;
+  height: 1334.71px;
+}
+
+#con14 {
+  width: 1452.46px;
+  height: 121.94px;
+  background-image: url("https://i.imgur.com/5NwDqkQ.png");
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+}
+
+#con15 {
+  width: 1452.46px;
+  height: 124.97px;
+  background-image: url("https://i.imgur.com/UfoNEax.png");
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+}
+
+#con16 {
+  width: 1452.46px;
+  height: 216.99px;
+  background-image: url("https://i.imgur.com/ZQjI4PU.png");
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+}
+
+#third.block {
+  color: #005584;
+  font-size: 20px;
+}
+
+#con18 {
+  margin: 20px 0px;
+}
+
+#con19 {
+  margin: 20px 0px;
+}
+
+.btn {
+  width: 165.34px;
+  height: 25.83px;
+  background-color: #9E9E9F;
+  margin: 10px 0px;
+  border-radius: 2px;
+  text-align: center;
+  color: white;
+  font-size: 100;
+}
+.btn:hover {
+  color: white;
+  background: #595757;
+}
+
+#btn2 {
+  width: 165.34px;
+  height: 25.83px;
+}
+
+.ham {
+  width: 50px;
+  height: 50px;
+  background-color: #EFF6F9;
+  border-radius: 5px;
+  color: #005584;
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 1250px;
+  padding: 0px 5px;
+}
+.ham:hover {
+  color: white;
+  background: #005584;
+}
+
+.w {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 100px;
+}
+
+.w1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 180px;
+}
+
+.w2 {
+  margin-left: 310px;
+}
+
+.w3 {
+  margin-left: 170px;
+}
+
+.w4 {
+  margin-left: 125px;
+  font-size: 30px;
+}
+
+#second1 {
+  display: none;
+}
+
+#second2 {
+  display: none;
+}
+
+#second3 {
+  display: none;
+}

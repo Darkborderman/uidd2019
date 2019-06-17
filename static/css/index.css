@@ -2,13 +2,10 @@
 
 /*圖層:遮罩層:0 跳出頁二:1 跳出頁一:2 container:3;*/
 
-body{
+body,html{
+  font-family:微軟正黑體;
   margin:0;
   padding:0;
-}
-
-*{
-  font-family:微軟正黑體;
 }
 
 .container{
@@ -91,28 +88,45 @@ body{
   text-align:center;
   background: #888888;
   color: #FFFFFF;
-  height:3.35vh;
+  line-height: 4vh;
+  height:4vh;
 }
 
-summary{
+.info-category{
   background-color: #F7F7F7;
   list-style: none;
+  line-height: 4vh;
+  height:4vh;
 }
-summary::-webkit-details-marker {
+.info-category::-webkit-details-marker {
   display: none;
 }
-summary ::-moz-list-bullet {
+.info-category ::-moz-list-bullet {
   font-size: 0;
 }
 
-summary::after{
+.info-category::after{
   content: '';
   position: absolute;
   width: 1em; height: 1em;
   margin: .2em 0 0 .5ch;
+  margin-top:1.3vh;
   background: url(../img/arrow.png) no-repeat;
   background-size: 100% 100%;
   transition: 2s;
+}
+.implement{
+  background-color:#C8C9CA;
+}
+.info-tab{
+  background-color: #EAEAEA;
+  line-height: 4vh;
+  height:4vh;
+}
+.info-case{
+  text-align:center;
+  line-height:3vh;
+  height:3vh;
 }
 
 /*main content*/
@@ -160,4 +174,12 @@ summary::after{
   width:100%;
   height:100%;
   border-style: none;
+}
+.next{
+  background-color: #005584;
+  color:#FFFFFF;
+  border-radius:5px;
+  text-align:center;
+  line-height: 4vh;
+  height:4vh;
 }

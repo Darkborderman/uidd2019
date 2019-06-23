@@ -3,6 +3,16 @@
   font-family: 微軟正黑體;
   box-sizing: border-box;
 }
+.me_buy{
+  margin-top:-25px;
+  position: fixed;
+  background-color:white;
+  width:100%;
+}
+.me_buy a {
+  margin-left: 10px;
+  font-size:20px;
+}
 
 body, html {
   width: 1577px;

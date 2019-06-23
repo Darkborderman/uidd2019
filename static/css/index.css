@@ -92,6 +92,10 @@ body,html{
   height:4vh;
 }
 
+.info-category:hover{
+  background-color:#C8C9CA;
+}
+
 .info-category{
   background-color: #F7F7F7;
   list-style: none;
@@ -108,7 +112,8 @@ body,html{
 .info-category::after{
   content: '';
   position: absolute;
-  width: 1em; height: 1em;
+  width: 0.6em;
+  height: 0.6em;
   margin: .2em 0 0 .5ch;
   margin-top:1.3vh;
   background: url(../img/arrow.png) no-repeat;

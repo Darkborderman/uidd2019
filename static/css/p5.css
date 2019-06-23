@@ -141,7 +141,7 @@ button{
   margin-left:1250px;
 }
 
-.top > button:focus ~ ul {
+.top > button.use:focus ~ ul {
   visibility: visible;
   opacity: 1;
 }

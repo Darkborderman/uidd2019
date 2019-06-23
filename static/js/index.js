@@ -50,20 +50,6 @@ $(document).ready(function () {
         popup1.show();
     });
 
-    let tabList=["contract_form",
-    "verification",
-    "applicant_form",
-    "record_report",
-    "scanning"];
-    let currentTab='contract_form';
-    for(let item of tabList){
-        document.getElementById(item).addEventListener("click",()=>{
-            console.log(item);
-            document.getElementById(currentTab).style=`  color:#888888;
-            background-color:#f7f7f7;`;
-            currentTab=item;
-            document.getElementById(item).style=`color:#595757; background-color:#DEDFE0;`;
-        });
-    }
+
     
 });

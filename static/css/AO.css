@@ -54,10 +54,6 @@ body, html {
   background-position: center;
 }
 
-#content2 {
-  width: 1523.41px;
-  height: 520px;
-}
 
 .con {
   width: 1487px;
@@ -70,7 +66,7 @@ body, html {
   color: #005584;
 }
 
-#content3 {
+#area2 {
   width: 1523.41px;
   height: auto;
 }
@@ -162,7 +158,7 @@ body, html {
   background-position: center;
 }
 
-#content4 {
+#area3 {
   width: 1523.41px;
   height: 1334.71px;
 }
@@ -278,4 +274,9 @@ body, html {
 
 #second3 {
   display: none;
+}
+
+a{
+	text-decoration:none;
+	color:black;
 }

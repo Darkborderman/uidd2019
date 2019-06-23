@@ -21,6 +21,7 @@
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    opacity: 0;
     z-index: 2;
   }
   #form_text{
@@ -67,6 +68,7 @@
     height: 33.14%;
     background-color: white;
     border-radius: 15px;
+    opacity: 0;
     z-index: 1;
   }
   .SelectedButton{

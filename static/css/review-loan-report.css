@@ -14,7 +14,7 @@ body, html {
 
 .content {
   width: 1523.41px;
-  height: 3150px;
+  height: auto;
   background: #DEDFE0;
   color: #595757;
   border-radius: 10px;

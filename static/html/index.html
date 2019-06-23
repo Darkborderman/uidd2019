@@ -4,29 +4,63 @@
     <meta charset="UTF-8">
     <title>記錄頁面</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nextPopup.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="../js/index.js"></script>
 </head>
 
 <body>
-    <!--遮罩層-->
+    <!--mask-->
     <div id="cover"></div>
 
     <div class="header">
-        <div class="header-logo"></div> 
+        <div class="header-logo"></div>
         <div class="header-login">
             <div class="header-option">聯絡窗口</div>
             <div class="header-option">登出系統</div>
         </div>
         <div class="header-member">員工編號:103707 日期:2018/01/29</div>
-    </div> 
+    </div>
     <div class="container">
         <aside class="info">
             <div>
                 <div class="info-title">客戶文件夾</div>
                 <div class="info-description">信用貸款<br>消金TM豐利金<br>陳小明<br>L1234556789056</div>
                 <div class="info-record">各項紀錄</div>
-                <button id="Nextstep">Next Step</button>
+                <details>
+                    <summary class="info-category">申請書填寫紀錄</summary>
+                </details>
+                <details>
+                    <summary class="info-category">徵信紀錄</summary>
+                </details>
+                <details>
+                    <summary class="info-category implement">核貸紀錄</summary>
+                    <div>
+                        <details>
+                            <summary class="info-tab">和貸書</summary>
+                        </details>
+                        <details>
+                            <summary class="info-tab">和貸委員意見</summary>
+                        </details>
+                        <details>
+                            <summary class="info-tab">綜合檢視</summary>
+                        </details>
+                        <details>
+                            <summary class="info-tab">和貸書修改紀錄</summary>
+                            <div class="info-case">L1234556789056</div>
+                            <div class="info-case">L1234556789056</div>
+                            <div class="info-case">L1234556789056</div>
+                        </details>
+                    </div>
+                </details>
+                <details>
+                    <summary class="info-category">撥款申請紀錄</summary>
+                </details>
+                <details>
+                    <summary class="info-category">撥款及結案紀錄</summary>
+                </details>
+                <div class="next" id="Nextstep">Next Step</div>
+
             </div>
         </aside>
 
@@ -41,78 +75,90 @@
             <div class="main-content">
                 <iframe class="tab-content" id="tab-content"></iframe>
             </div>
-        </div> 
-        <!--Next step jump out-->
+        </div>
+
+        <!--Next step popup-->
         <div class='jumpout_form'>
-        <div id='form_text'>請選擇下一步作業選項</div>
-        <div id='form_cancel'><img src="../img/xx.png"></div>
-        <div class='SelectButton left4Button agree'>
-            同意
-        </div>
-        <div class='SelectButton left4Button donot'>
-            不予承作
-        </div>
-        <div class='SelectButton left4Button getback'>
-            退回
-        </div>
-        <div class='SelectButton left4Button trans'>
-            轉呈
-        </div>
-        <div class='SelectButton right2Button'>
-            調整核簽流程
-        </div>
-        <div class='SelectButton right2Button'>
-            線審
-        </div>
-    </div>
-    <div class='jumpout_form2'>
-        <div id='form2_cancel'><img src="../img/xx.png"></div>
-        <div class='SelectedButton'>同意</div>
-        <div class='SelectOption'>
-            <input type="checkbox" value="1" name="ckbox1">
-            <span>全選</span>
-        </div>
-        <div class='SelectOption2'>
-            <div>
-                <input type="checkbox" value="1" class="ckbox1">
-                <span>核貸條件</span>
+            <div id='form_text'>請選擇下一步作業選項</div>
+            <div id='form_cancel'><img src="../img/xx.png"></div>
+            <div class='SelectButton left4Button agree'>
+                同意
             </div>
-            <div>
-                <input type="checkbox" value="1" class="ckbox1">
-                <span>利率條件</span>
+            <div class='SelectButton left4Button donot'>
+                不予承作
             </div>
-            <div>
-                <input type="checkbox" value="1" class="ckbox1">
-                <span>費用減免</span>
+            <div class='SelectButton left4Button getback'>
+                退回
             </div>
-            <div>
-                <input type="checkbox" value="1" class="ckbox1">
-                <span>文件候補</span>
+            <div class='SelectButton left4Button trans'>
+                轉呈
             </div>
-            <div>
-                <input type="checkbox" value="1" class="ckbox1">
-                <span>提前違約金</span>
+            <div class='SelectButton right2Button'>
+                調整核簽流程
             </div>
-            <div>
-                <input type="checkbox" value="1" class="ckbox1">
-                <span>利害關係人授<br> &emsp;&nbsp;信檢核表</span>
-            </div>
-            <div>
-                <input type="checkbox" value="1" class="ckbox1">
-                <span>申覆</span>
+            <div class='SelectButton right2Button'>
+                線審
             </div>
         </div>
-        <div class='decide_back_block'>
-            <div class='decide_back_button decide_button'>
-                確定
+        <div class='jumpout_form2'>
+            <div id='form2_cancel'><img src="../img/xx.png"></div>
+            <div class='SelectedButton'>同意</div>
+            <div class='SelectOption'>
+                <input type="checkbox" value="1" name="ckbox1">
+                <span>全選</span>
             </div>
-            <div class='decide_back_button back_button'>返回
+            <div class='SelectOption2'>
+                <div>
+                    <input type="checkbox" value="1" class="ckbox1">
+                    <span>核貸條件</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1" class="ckbox1">
+                    <span>利率條件</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1" class="ckbox1">
+                    <span>費用減免</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1" class="ckbox1">
+                    <span>文件候補</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1" class="ckbox1">
+                    <span>提前違約金</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1" class="ckbox1">
+                    <span>利害關係人授<br> &emsp;&nbsp;信檢核表</span>
+                </div>
+                <div>
+                    <input type="checkbox" value="1" class="ckbox1">
+                    <span>申覆</span>
+                </div>
+            </div>
+            <div class='decide_back_block'>
+                <div class='decide_back_button decide_button'>
+                    確定
+                </div>
+                <div class='decide_back_button back_button'>返回
+                </div>
             </div>
         </div>
     </div>
 
-    </div>
-    
 </body>
+<script>
+    let frame = document.getElementById('tab-content');
+    document.getElementById("verification").addEventListener('click', () => {
+        frame.src = "./AO.html";
+    });
+    document.getElementById("contract_form").addEventListener('click',()=>{
+        frame.src= "./review-loan-report.html";
+    });
+    document.getElementById("scanning").addEventListener('click',()=>{
+        frame.src="./tab/scanning.html";
+    });
+</script>
 
 </html>

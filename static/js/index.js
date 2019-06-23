@@ -1,20 +1,23 @@
 //Next step jump out form//
 $(document).ready(function () {
-
+    var popup1 = $('.jumpout_form');
+    var popup2 = $('.jumpout_form2');
+    popup1.hide();
+    popup2.hide();
     $('#Nextstep').click(function () {
         $('#cover').css('display', 'block');
         $('#cover').css('height', document.body.clientHeight + 'px');
-        $('.jumpout_form').css({ "opacity": "1" });
+        popup1.show();
         $('.container').css({ 'z-index': "0" });
     });
     $('#form_cancel').click(function () {
         $('#cover').css('display', 'none');
-        $('.jumpout_form').css({ "opacity": "0" });
+         popup1.hide()
         $('.container').css({ 'z-index': "3" });
     });
     $('.left4Button').click(function () {
-        $('.jumpout_form').css({ "opacity": "0", "z-index": "1" });
-        $('.jumpout_form2').css({ "opacity": "1", "z-index": "2" });
+        popup1.hide();
+        popup2.show();
     });
     $('.agree').click(function () {
         $(".SelectedButton").html("同意");
@@ -30,21 +33,21 @@ $(document).ready(function () {
     });
     $('#form2_cancel').click(function () {
         $('#cover').css('display', 'none');
-        $('.jumpout_form2').css({ "opacity": "0", "z-index": "1" });
-        $('.jumpout_form').css({ "opacity": "0", "z-index": "2" });
+         popup1.hide();
+         popup2.hide();
         $("input[type='checkbox']").prop("checked", false);
         $('.container').css({ 'z-index': "3" });
     });
     $('.decide_button').click(function () {
         $('#cover').css('display', 'none');
-        $('.jumpout_form2').css({ "opacity": "0", "z-index": "1" });
-        $('.jumpout_form').css({ "opacity": "0", "z-index": "2" });
+        popup1.hide();
+        popup2.hide();
         $("input[type='checkbox']").prop("checked", false);
         $('.container').css({ 'z-index': "3" });
     });
     $('.back_button').click(function () {
-        $('.jumpout_form').css({ "opacity": "1", "z-index": "2" });
-        $('.jumpout_form2').css({ "opacity": "0", "z-index": "1" });
+        popup2.hide();
+        popup1.show();
     });
 
     let tabList=["contract_form",

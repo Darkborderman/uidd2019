@@ -7,8 +7,8 @@ $(document).ready(function () {
             console.log(data);
             document.getElementById("paragraph").innerText=data.text;
         })
+        
     $(document).on('mouseup', function (e) {
-
         let x = window.getSelection();
         let xrange = x.getRangeAt(0);
         highlightRange(xrange);

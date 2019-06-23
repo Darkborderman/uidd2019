@@ -4,6 +4,7 @@
 <head>
 	<title>p5</title>
 	<link rel="stylesheet" href="../css/p5.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -134,7 +135,23 @@
 
 	</div>
 
-
+	<script>
+	$(document).ready(function () {
+		$(document).on('mouseup', function (e) {
+			let x = window.getSelection();
+			let xrange = x.getRangeAt(0);
+			highlightRange(xrange);
+		});
+	});
+	function highlightRange(range) {
+		var newNode = document.createElement("div");
+		newNode.setAttribute(
+		"style",
+		"background-color: yellow; display: inline;"
+		);
+		range.surroundContents(newNode);
+	}
+	</script>
 </body>
 
 

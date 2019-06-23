@@ -65,5 +65,19 @@ $(document).ready(function () {
             document.getElementById(item).style=`color:#595757; background-color:#DEDFE0;`;
         });
     }
-    
+    let categoryList=["撥款及結案紀錄",
+    "撥款申請紀錄",
+    "核貸紀錄",
+    "徵信紀錄",
+    "申請書填寫紀錄"];
+    let currentCategory="撥款及結案紀錄";
+    for(let item of categoryList){
+        document.getElementById(item).addEventListener("click",()=>{
+            console.log(item);
+            document.getElementById(currentCategory).style=`  color:#888888;
+            background-color:#f7f7f7;`;
+            currentCategory=item;
+            document.getElementById(item).style=`color:#595757; background-color:#DEDFE0;`;
+        });
+    }
 });

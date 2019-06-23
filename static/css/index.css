@@ -101,6 +101,8 @@ body,html{
   list-style: none;
   line-height: 4vh;
   height:4vh;
+  transition: 2s;
+  margin-top:2px;
 }
 .info-category::-webkit-details-marker {
   display: none;
@@ -119,9 +121,6 @@ body,html{
   background: url(../img/arrow.png) no-repeat;
   background-size: 100% 100%;
   transition: 2s;
-}
-.implement{
-  background-color:#C8C9CA;
 }
 .info-tab{
   background-color: #EAEAEA;
@@ -161,7 +160,7 @@ body,html{
   color:#888888;
   background-color:#f7f7f7;
   transition-duration:0.4s;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 0px 0px 8px;
 }
 .main-tab:hover{
   color:#595757;
